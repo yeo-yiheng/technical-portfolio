@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yeo Yiheng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Sora', sans-serif;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #ADEFD1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #030608;
+            border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: gray;
+        }
+    </style>
+    <!-- placeholder image used -->
+    <link rel="icon" type="image/x-icon" href="assets/placeholder_image.png">
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
+    <nav class="navbar">
+        <a href="#about" class="navbar_name">Yeo Yiheng</a>
+        <div class="nav_options_icons">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" class="active" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" class="active" href="#experience">EXPERIENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" class="active" href="#projects">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" class="active" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+<ul class="nav_menu_icons">
+                <li class="icon-item">
+                    <a href="https://github.com/yeo-yiheng">
+                        <img class="navbar_icon" src="assets/resume_icon.png">
+                    </a>
+                </li>
+                <li class="icon-item">
+                    <a href="https://github.com/yeo-yiheng">
+                        <img class="navbar_icon" src="assets/resume_icon.png">
+                    </a>
+                </li>
+                <li class="icon-item">
+                    <a href="https://www.linkedin.com/in/yeoyiheng/">
+                        <img class="navbar_icon" src="assets/linkedin_icon.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="about" id="about">
+        <div class="section_textuals">
+            <h2 class="section_title">ABOUT</h2>
+            <div class="img_description">
+                <h3>I'm an undergraduate Computer Science student at the National University of Singapore. I'm gearing
+                    myself towards
+                    being a fullstack developer.
+                </h3>
+                <div class="about_image">
+                    <img id="hero_face_img" src="assets/YH FACE.jpg">
+                </div>
+            </div>
+            <p class="section_generic_description">► An individual that places a high importance in ensuring that the
+                work delivered is professional
+                and of top quality.</p>
+            <p class="section_generic_description">► Highly passionate about developing software that prioritizes a
+                utilitarian purpose.</p>
+            <p class="section_generic_description">► Constantly on the hunt for entrepreneurial opportunities to disrupt
+                any prospective
+                industry with a software that is highly useful.</p>
+            <p class="section_generic_description">Find out more about me below ▼</p>
+        </div>
+    </section>
+    <div class="about_experience_blur"></div>
+    <section class="experience" id="experience">
+        <div class="section_textuals">
+            <h2 class="section_title" id="experience_title">EXPERIENCE</h2>
+            <div class="experience_content_container">
+                <div class="experience_timeline">
+                    <div class="experience_timeline_line"></div>
+                    <!-- Make it a circle and offset such that it follows wireframe -->
+                    <div class="experience_timeline_circle"></div>
+                    <div class="experience_timeline_circle"></div>
+                    <div class="experience_timeline_circle"></div>
+                </div>
+                <div class="experience_cards">
+                    <div class="experience_card_container">
+                        <!-- https://stackoverflow.com/questions/12483178/how-can-i-make-a-triangle-in-html -->
+                        <div class="experience_card_triangle"></div>
+                        <div class="experience_card_content">
+                            <p class="experience_card_title">Company X</p>
+                            <p class="experience_card_description">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book.</p>
+                        </div>
+                        <div class="experience_card_triangle"></div>
+                        <div class="experience_card_content">
+                            <p class="experience_card_title">Company X</p>
+                            <p class="experience_card_description">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book.</p>
+                        </div>
+                        <div class="experience_card_triangle"></div>
+                        <div class="experience_card_content">
+                            <p class="experience_card_title">Company X</p>
+                            <p class="experience_card_description">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="experience_project_blur"></div>
+    <section class="projects" id="projects">
+        <div class="section_textuals">
+            <h2 class="section_title">PROJECTS</h2>
+            <div class="projects_cards">
+                <!-- Might reduce to 1 card per row if not enough space -->
+                <div class="project_card">
+                    <div class="project_title_container">
+                        <p class="project_card_title">MyWay</p>
+                        <img class="project_logo" src="assets/MyWay Logo.png">
+                    </div>
+                    <div class="project_description_container">
+                        <p class="project_card_description">We aim to innovate upon the existing idea of navigation to
+                            create one that is more
+                            personalized, informative, and safer.
+                        </p>
+                        <p class="project_card_cta" id="learn_myway">Learn More</p>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_title_container">
+                        <p class="project_card_title">Travelio</p>
+                        <img class="project_logo" src="assets/Placeholder Travelio.png">
+                    </div>
+                    <div class="project_description_container">
+                        <p class="project_card_description"> A web-based cum mobile application that allows for easier
+                            planning and tracking of travel itinerary details,
+                            which includes administrative matters and scheduling.</p>
+                        <p class="project_card_cta" id="learn_travelio">Learn More</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="section_textuals">
+            <h2 class="section_title">CONTACT</h2>
+            <div class="contact_content">
+                <p class="contact_content_summary">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="contact_content_detail_container">
+                    <div class="contact_content_detail_information">
+                        <p class="contact_email">yeoyiheng0211@gmail.com</p>
+                        <p class="contact_number">+65 9656 3032</p>
+                        <div class="contact_icons">
+                            <!-- Change resume to downloadable, change insta and twitter link as well -->
+                            <a href="">
+                                <img class="contact_icon" src="assets/resume_icon.png">
+                            </a>
+                            <a href="https://www.linkedin.com/in/yeoyiheng/">
+                                <img class="contact_icon" src="assets/linkedin_icon.png">
+                            </a>
+                            <a href="https://github.com/yeo-yiheng">
+<img class="contact_icon" src="assets/github_icon.png">
+                            </a>
+                            <a href="https://www.linkedin.com/in/yeoyiheng/">
+                                <img class="contact_icon" src="assets/instagram_icon.png">
+                            </a>
+                            <a href="https://twitter.com/k4lrelick">
+                                <img class="contact_icon" src="assets/twitter_icon.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact_content_send_email">
+                        <a class="contact_send_message_cta" href="mailto:yeoyiheng0211@gmail.com">SEND ME A MESSAGE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popups -->
+    <div class="bg-modal" id="travelio_content">
+        <div class="modal-content">
+            <div class="close" id="close_travelio">+</div>
+            <div class="content_container">
+                <h2 class="project_content_title">Travelio</h2>
+                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <a class="project_content_cta" href="https://github.com/yeo-yiheng/MyWay">DEMO</a>
+                <a class="project_content_cta" href="https://github.com/yeo-yiheng/MyWay">REPOSITORY</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-modal" id="myway_content">
+        <div class="modal-content">
+            <div class="close" id="close_myway">+</div>
+            <div class="content_container">
+                <h2 class="project_content_title">MyWay</h2>
+                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <a class="project_content_cta" href="https://github.com/yeo-yiheng/MyWay">DEMO</a>
+                <a class="project_content_cta" href="https://github.com/yeo-yiheng/MyWay">REPOSITORY</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
