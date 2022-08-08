@@ -26,7 +26,6 @@
         /* Handle */
         ::-webkit-scrollbar-thumb {
             background: #030608;
-            border-radius: 5px;
         }
 
         /* Handle on hover */
@@ -35,7 +34,7 @@
         }
     </style>
     <!-- placeholder image used -->
-    <link rel="icon" type="image/x-icon" href="assets/placeholder_image.png">
+    <link rel="icon" type="image/x-icon" href="assets/Logo.png">
 </head>
 
 <body>
@@ -45,20 +44,26 @@
         </span>
     </div>
     <nav class="navbar">
-        <a href="#about" class="navbar_name">Yeo Yiheng</a>
+        <div class="navbar-logo-container">
+            <a href="#about" class="navbar-logo"><img class="nav-logo" src="./assets/Logo.png" alt="Yiheng Logo"></a>
+            <a href="#about" class="navbar-name">Yeo Yiheng</a>
+        </div>
         <div class="nav_options_icons">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a class="nav-link" class="active" href="#about">ABOUT</a>
+                    <a class="active nav-link" href="#about">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" class="active" href="#experience">EXPERIENCE</a>
+                    <a class="nav-link" href="#experience">EXPERIENCE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" class="active" href="#projects">PROJECTS</a>
+                    <a class="nav-link" href="#projects">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" class="active" href="#contact">CONTACT</a>
+                    <a class="nav-link" href="#interests">INTERESTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -66,15 +71,15 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-<ul class="nav_menu_icons">
+            <!-- <ul class="nav_menu_icons">
                 <li class="icon-item">
                     <a href="https://github.com/yeo-yiheng">
-                        <img class="navbar_icon" src="assets/resume_icon.png">
+                        <img class="navbar_icon" src="assets/github_icon.png">
                     </a>
                 </li>
                 <li class="icon-item">
                     <a href="https://github.com/yeo-yiheng">
-                        <img class="navbar_icon" src="assets/resume_icon.png">
+                        <img class="navbar_icon" src="assets/twitter-white.png">
                     </a>
                 </li>
                 <li class="icon-item">
@@ -82,22 +87,43 @@
                         <img class="navbar_icon" src="assets/linkedin_icon.png">
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
+    <div class="side-panel-wrapper">
+        <p class="about">ABOUT</p>
+        <div class="side-about sideline"></div>
+        <p class="experience">EXPERIENCE</p>
+        <div class="side-experience sideline"></div>
+        <p class="projects">PROJECTS</p>
+        <div class="side-projects sideline"></div>
+        <p class="interests">INTERESTS</p>
+        <div class="side-interests sideline"></div>
+        <p class="contact">CONTACT</p>
+        <div class="side-contact sideline"></div>
+    </div>
     <section class="about" id="about">
         <div class="section_textuals">
-            <h2 class="section_title">ABOUT</h2>
-            <div class="img_description">
-                <h3>I'm an undergraduate Computer Science student at the National University of Singapore. I'm gearing
-                    myself towards
-                    being a fullstack developer.
-                </h3>
-                <div class="about_image">
-                    <img id="hero_face_img" src="assets/YH FACE.jpg">
+            <!-- <h2 class="section_title">ABOUT</h2> -->
+            <div class="about-wrapper">
+                <div class="about-text-wrapper">
+                    <p class="about-greeting">Hello, my name is...</p>
+                    <h2 class="about-name">Yeo Yiheng</h2>
+                    <p class="about-role"><em>I am a Software Engineer</em></p>
+                    <p class="about-description">I'm an undergraduate Computer Science student at the National
+                        University of Singapore. I'm gearing
+                        myself towards being a fullstack developer.
+                    </p>
+                    <div class="about-buttons">
+                        <button class="cv-button" type="button"><a class="resume-download" download="yiheng-resume.pdf"
+                                target="_blank" href="./assets/resume.pdf"></a>Download CV</a></button>
+                        <button class="contact-button" type="button"><a class="contact-link"
+                                href="#contact">Contact</a></button>
+                    </div>
                 </div>
+                <div class="about-image"></div>
             </div>
-            <p class="section_generic_description">► An individual that places a high importance in ensuring that the
+            <!-- <p class="section_generic_description">► An individual that places a high importance in ensuring that the
                 work delivered is professional
                 and of top quality.</p>
             <p class="section_generic_description">► Highly passionate about developing software that prioritizes a
@@ -105,53 +131,75 @@
             <p class="section_generic_description">► Constantly on the hunt for entrepreneurial opportunities to disrupt
                 any prospective
                 industry with a software that is highly useful.</p>
-            <p class="section_generic_description">Find out more about me below ▼</p>
+            <p class="section_generic_description">Find out more about me below ▼</p> -->
         </div>
     </section>
-    <div class="about_experience_blur"></div>
     <section class="experience" id="experience">
         <div class="section_textuals">
             <h2 class="section_title" id="experience_title">EXPERIENCE</h2>
             <div class="experience_content_container">
                 <div class="experience_timeline">
                     <div class="experience_timeline_line"></div>
-                    <!-- Make it a circle and offset such that it follows wireframe -->
                     <div class="experience_timeline_circle"></div>
                     <div class="experience_timeline_circle"></div>
                     <div class="experience_timeline_circle"></div>
                 </div>
                 <div class="experience_cards">
                     <div class="experience_card_container">
-                        <!-- https://stackoverflow.com/questions/12483178/how-can-i-make-a-triangle-in-html -->
                         <div class="experience_card_triangle"></div>
                         <div class="experience_card_content">
-                            <p class="experience_card_title">Company X</p>
-                            <p class="experience_card_description">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book.</p>
+                            <p class="experience_card_title">Bytedance</p>
+                            <p class="experience-card-role"><em>Software Engineer Intern (Android)</em></p>
+                            <p class="experience-card-timeline"><em>January 2022 - June 2022</em></p>
+                            <p class="experience_card_description">I worked on TikTok Android, where I developed
+                                sophisticated software features using
+                                <strong><em>Java, Kotlin</em></strong> and <strong><em>XML</em></strong>, implemented
+                                rigorous testing with <strong><em>Mockk</em>
+                                </strong> and <strong><em>JUnit</em></strong>, set up <strong><em>event
+                                        tracking</em></strong>, <strong><em>refactored</em></strong> and
+                                <strong><em>maintained</em></strong>
+                                the existing codebase, and <strong><em>collaborated</em></strong> closely with
+                                colleagues on creating a world-class mobile experience.
+                            </p>
                         </div>
                         <div class="experience_card_triangle"></div>
                         <div class="experience_card_content">
-                            <p class="experience_card_title">Company X</p>
-                            <p class="experience_card_description">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book.</p>
+                            <p class="experience_card_title">National University of Singapore</p>
+                            <p class="experience-card-role"><em>CS1101S Teaching Assistant</em></p>
+                            <p class="experience-card-timeline"><em>August 2021 - December 2021</em></p>
+                            <p class="experience_card_description">I taught a class of 8 incoming freshmen the module:
+                                <strong><em>Programming Methodology.<br></em></strong>
+                                The module emphasizes heavily on the fundamentals of computer science such as
+                                <strong><em>recursion</em></strong>, <strong><em>complexity analysis, </em></strong>
+                                <strong><em>searching</em></strong> and <strong><em>sorting</em></strong> algorithms,
+                                amongst many other things. This experience forced me to be comfortable
+                                <strong><em>articulating</em></strong>
+                                my thoughts, <strong><em>adapting</em></strong> to different individual learning styles,
+                                and most importantly, <strong><em>mastering</em></strong> the fundamentals of computer
+                                science.
+                            </p>
                         </div>
                         <div class="experience_card_triangle"></div>
                         <div class="experience_card_content">
-                            <p class="experience_card_title">Company X</p>
-                            <p class="experience_card_description">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book.</p>
+                            <p class="experience_card_title">Asia Hydrogen Energy</p>
+                            <p class="experience-card-role"><em>Web Developer</em></p>
+                            <p class="experience-card-timeline"><em>July 2021 - December 2021</em></p>
+                            <p class="experience_card_description">I took charge of the entire development process of
+                                the website for a Hydrogen Energy startup in Taiwan.
+                                I employed <strong><em>Webflow</em></strong> to develop the website, as per the client's
+                                request for easier maintainability on their side. I ensured the website was
+                                <strong><em>scalable</em></strong> and <strong><em>responsive</em></strong>. I also
+                                headed the <strong><em>transition</em></strong> of
+                                the existing domain name from one domain registrar to another. <br><br>The website can
+                                be viewed <a class="ahe-hyperlink" href="https://www.ah2e.com/"
+                                    target="_blank">here</a>.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="experience_project_blur"></div>
     <section class="projects" id="projects">
         <div class="section_textuals">
             <h2 class="section_title">PROJECTS</h2>
@@ -167,7 +215,7 @@
                             create one that is more
                             personalized, informative, and safer.
                         </p>
-                        <p class="project_card_cta" id="learn_myway">Learn More</p>
+                        <p class="project_card_cta learn_myway">Learn More</p>
                     </div>
                 </div>
                 <div class="project_card">
@@ -179,7 +227,28 @@
                         <p class="project_card_description"> A web-based cum mobile application that allows for easier
                             planning and tracking of travel itinerary details,
                             which includes administrative matters and scheduling.</p>
-                        <p class="project_card_cta" id="learn_travelio">Learn More</p>
+                        <p class="project_card_cta learn_travelio">Learn More</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interests" id="interests">
+        <div class="section_textuals">
+            <h2 class="section_title">INTERESTS</h2>
+            <div class="projects_cards">
+                <!-- Might reduce to 1 card per row if not enough space -->
+                <div class="project_card">
+                    <div class="project_title_container">
+                        <p class="project_card_title">MyWay</p>
+                        <img class="project_logo" src="assets/MyWay Logo.png">
+                    </div>
+                    <div class="project_description_container">
+                        <p class="project_card_description">We aim to innovate upon the existing idea of navigation to
+                            create one that is more
+                            personalized, informative, and safer.
+                        </p>
+                        <p class="project_card_cta learn_myway">Learn More</p>
                     </div>
                 </div>
             </div>
@@ -204,7 +273,7 @@
                                 <img class="contact_icon" src="assets/linkedin_icon.png">
                             </a>
                             <a href="https://github.com/yeo-yiheng">
-<img class="contact_icon" src="assets/github_icon.png">
+                                <img class="contact_icon" src="assets/github_icon.png">
                             </a>
                             <a href="https://www.linkedin.com/in/yeoyiheng/">
                                 <img class="contact_icon" src="assets/instagram_icon.png">
