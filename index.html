@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -66,6 +67,7 @@
                     <a class="nav-link" href="#contact">CONTACT</a>
                 </li>
             </ul>
+            <div class="mask"></div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -102,6 +104,24 @@
         <p class="contact">CONTACT</p>
         <div class="side-contact sideline"></div>
     </div>
+    <div class="side-panel-icon-wrapper">
+        <a href="https://www.instagram.com/yihengg/?hl=en" target="_blank"> <img class="side-panel-img"
+                src="./assets/instagram_icon.png" alt="">
+        </a>
+        <div class="side-instagram right-sideline"></div>
+        <a href="https://twitter.com/k4lrelick" target="_blank"> <img class="side-panel-img"
+                src="./assets/twitter_icon.png" alt="">
+        </a>
+        <div class="side-twitter right-sideline"></div>
+        <a href="https://github.com/yeo-yiheng" target="_blank"> <img class="side-panel-img"
+                src="./assets/github_icon.png" alt="">
+        </a>
+        <div class="side-github right-sideline"></div>
+        <a href="https://www.linkedin.com/in/yeoyiheng/" target="_blank"> <img class="side-panel-img"
+                src="./assets/linkedin_icon.png" alt="">
+        </a>
+        <div class="side-linkedin right-sideline"></div>
+    </div>
     <section class="about" id="about">
         <div class="section_textuals">
             <!-- <h2 class="section_title">ABOUT</h2> -->
@@ -116,7 +136,7 @@
                     </p>
                     <div class="about-buttons">
                         <button class="cv-button" type="button"><a class="resume-download" download="yiheng-resume.pdf"
-                                target="_blank" href="./assets/resume.pdf"></a>Download CV</a></button>
+                                target="_blank" href="./assets/resume.pdf"></a>Resume</a></button>
                         <button class="contact-button" type="button"><a class="contact-link"
                                 href="#contact">Contact</a></button>
                     </div>
@@ -176,7 +196,9 @@
                                 <strong><em>articulating</em></strong>
                                 my thoughts, <strong><em>adapting</em></strong> to different individual learning styles,
                                 and most importantly, <strong><em>mastering</em></strong> the fundamentals of computer
-                                science.
+                                science. <br><br>My teaching report can be viewed <a class="tr-hyperlink"
+                                    href="./assets/TEACHER_REPORT_for_2110CS1101S_PROGRAMMING_METHODOLOGY_TUTORIAL.pdf"
+                                    download="yiheng-tr.pdf" target="_blank">here</a>.
                             </p>
                         </div>
                         <div class="experience_card_triangle"></div>
@@ -211,44 +233,84 @@
                         <img class="project_logo" src="assets/MyWay Logo.png">
                     </div>
                     <div class="project_description_container">
-                        <p class="project_card_description">We aim to innovate upon the existing idea of navigation to
+                        <p class="project_card_description">The application aims to <strong><em>innovate</em></strong>
+                            upon the
+                            existing idea of navigation to
                             create one that is more
-                            personalized, informative, and safer.
+                            <strong><em>personalized</em></strong>, <strong><em>informative</em></strong>, and
+                            <strong><em>safer</em></strong>.
                         </p>
-                        <p class="project_card_cta learn_myway">Learn More</p>
                     </div>
+                    <button type="button" id="learn-myway" class="project_card_cta learn-myway">Learn More</button>
                 </div>
                 <div class="project_card">
                     <div class="project_title_container">
-                        <p class="project_card_title">Travelio</p>
+                        <p class="project_card_title">The Odin Project</p>
+                        <img class="project_logo" src="assets/odin-logo.png">
+                    </div>
+                    <div class="project_description_container">
+                        <p class="project_card_description">This is a self-learning project that I have picked up to
+                            learn <strong><em>HTML</em></strong>, <strong><em>CSS</em></strong>, and
+                            <strong><em>Javascript</em></strong> in-depth. There are also further paths like
+                            <strong><em>Ruby-on-Rails</em></strong> and <strong><em>React</em></strong>. <br><br>
+                            I am currently on the <strong><em>React pathway</em></strong>.
+                        </p>
+                        <button type="button" id="learn-odin" class="project_card_cta learn-odin">Learn More</button>
+                    </div>
+                </div>
+                <div class="project_card tbc-blur">
+                    <div class="project_title_container">
+                        <p class="project_card_title">Project YYY</p>
                         <img class="project_logo" src="assets/Placeholder Travelio.png">
                     </div>
                     <div class="project_description_container">
-                        <p class="project_card_description"> A web-based cum mobile application that allows for easier
-                            planning and tracking of travel itinerary details,
-                            which includes administrative matters and scheduling.</p>
-                        <p class="project_card_cta learn_travelio">Learn More</p>
+                        <p class="project_card_description">A web-based cum mobile application that allows for easier
+                            planning and tracking of travel itinerary details. </p>
+                        <button type="button" class="project_card_cta learn_travelio" disabled>Learn More</button>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
     <section class="interests" id="interests">
         <div class="section_textuals">
-            <h2 class="section_title">INTERESTS</h2>
-            <div class="projects_cards">
-                <!-- Might reduce to 1 card per row if not enough space -->
-                <div class="project_card">
-                    <div class="project_title_container">
-                        <p class="project_card_title">MyWay</p>
-                        <img class="project_logo" src="assets/MyWay Logo.png">
-                    </div>
-                    <div class="project_description_container">
-                        <p class="project_card_description">We aim to innovate upon the existing idea of navigation to
-                            create one that is more
-                            personalized, informative, and safer.
-                        </p>
-                        <p class="project_card_cta learn_myway">Learn More</p>
+            <div class="slider-wrapper">
+                <h2 class="section_title">INTERESTS</h2>
+                <p class="interest-description">I have been very interested in the blockchain which involves
+                    <em>Non-Fungible Tokens (NFT)</em> and
+                    the cryptocurrency market ever since 2020. I am also thinking of starting my own utility NFT
+                    collection when the time is right.
+                    Thus, I have been dabbling in a little bit of these markets myself. Here is a collection of some of
+                    my NFTs:</p>
+                <div class="img-slider-container">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./assets/moonbirds-4327.png" alt="">
+                                <p class="nft-title"><strong>Moonbirds by PROOF Collective</strong></p>
+                            </div>
+                            <div class="swiper-slide"><img src="./assets/oddities-4327.png" alt="">
+                                <p class="nft-title"><strong>Oddities by Gremplin</strong></p>
+                            </div>
+                            <div class="swiper-slide"><img src="./assets/bapetaverse-5972.png" alt="">
+                                <p class="nft-title"><strong>Bapetaverse by A Bathing Ape</strong></p>
+                            </div>
+                            <div class="swiper-slide"><img src="./assets/qt-3430.png" alt="">
+                                <p class="nft-title"><strong>Quantum Traders by Yawww</strong></p>
+                            </div>
+                            <div class="swiper-slide"><img src="./assets/bubblegoose-8222.webp" alt="">
+                                <p class="nft-title"><strong>Bubblegoose Ballers by WAGMI Beach</strong></p>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
@@ -257,71 +319,116 @@
     <section class="contact" id="contact">
         <div class="section_textuals">
             <h2 class="section_title">CONTACT</h2>
-            <div class="contact_content">
-                <p class="contact_content_summary">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <div class="contact_content_detail_container">
-                    <div class="contact_content_detail_information">
-                        <p class="contact_email">yeoyiheng0211@gmail.com</p>
-                        <p class="contact_number">+65 9656 3032</p>
-                        <div class="contact_icons">
-                            <!-- Change resume to downloadable, change insta and twitter link as well -->
-                            <a href="">
-                                <img class="contact_icon" src="assets/resume_icon.png">
-                            </a>
-                            <a href="https://www.linkedin.com/in/yeoyiheng/">
-                                <img class="contact_icon" src="assets/linkedin_icon.png">
-                            </a>
-                            <a href="https://github.com/yeo-yiheng">
-                                <img class="contact_icon" src="assets/github_icon.png">
-                            </a>
-                            <a href="https://www.linkedin.com/in/yeoyiheng/">
-                                <img class="contact_icon" src="assets/instagram_icon.png">
-                            </a>
-                            <a href="https://twitter.com/k4lrelick">
-                                <img class="contact_icon" src="assets/twitter_icon.png">
-                            </a>
+            <div class="contact-wrapper">
+                <p class="contact-description">I am currently sourcing for <strong><em>new opportunities</em></strong>
+                    to learn
+                    new skills and likewise demonstrate my capabilities. <br><br> If you think that I am a good fit for
+                    you, please feel
+                    free to reach out to me via <strong><em>any</em></strong> of the listed communication channels.
+                    <br><br>I am excited to hear from you and I will get back promptly.
+                </p>
+                <div class="contact_content">
+                    <div class="contact_content_detail_container">
+                        <div class="contact_content_detail_information">
+                            <div class="contact-information-wrapper">
+                                <div class="email-wrapper contact-icon-wrappers">
+                                    <img src="./assets/email.png" alt="email logo">
+                                    <p class="contact_email contact-detail">yeoyiheng0211@gmail.com</p>
+                                </div>
+                                <div class="number-wrapper contact-icon-wrappers">
+                                    <img src="./assets/telephone.png" alt="telephone logo">
+                                    <p class="contact_number contact-detail">+65 9656 3032</p>
+                                </div>
+                            </div>
+                            <button class="contact_content_send_email" type="button"><a class="contact_send_message_cta"
+                                    href="mailto:yeoyiheng0211@gmail.com">SEND ME A MESSAGE</a></button>
                         </div>
-                    </div>
-                    <div class="contact_content_send_email">
-                        <a class="contact_send_message_cta" href="mailto:yeoyiheng0211@gmail.com">SEND ME A MESSAGE</a>
+                        <div class="form-footer">
+                            <div class="contact_icons">
+                                <a class="contact-link" target="_blank" href="./assets/resume.pdf"
+                                    download="yiheng-resume.pdf">Resume</a>
+                                <a class="contact-link" target="_blank"
+                                    href="https://www.linkedin.com/in/yeoyiheng/">LinkedIn</a>
+                                <a class="contact-link" target="_blank" href="https://github.com/yeo-yiheng">GitHub</a>
+                                <a class="contact-link" target="_blank" href="https://twitter.com/k4lrelick">Twitter</a>
+                            </div>
+                            <div class="credits">
+                                Designed by Yiheng.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- CREDITS -->
+    <!-- <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Uniconlabs - Flaticon</a> -->
     <!-- Popups -->
-    <div class="bg-modal" id="travelio_content">
+    <div class="bg-modal" id="myway-content">
         <div class="modal-content">
-            <div class="close" id="close_travelio">+</div>
+            <div class="close" id="close-myway">+</div>
             <div class="content_container">
-                <h2 class="project_content_title">Travelio</h2>
-                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <a class="project_content_cta" href="https://github.com/yeo-yiheng/MyWay">DEMO</a>
-                <a class="project_content_cta" href="https://github.com/yeo-yiheng/MyWay">REPOSITORY</a>
+                <h2 class="project_content_title">MyWay</h2>
+                <p class="project_content_description">We strive to fill in all the gaps identified in current
+                    navigation systems, as well as <strong><em>redesign</em></strong> and
+                    <strong><em>rethink</em></strong> how such systems can be made <strong><em>safer</em></strong> to
+                    use in
+                    conjunction with driving.
+                </p>
+                <p class="project_content_description">Our application should get our user from one location to another
+                    with confidence that they are taking the <strong><em>best route</em></strong> to their destination,
+                    on top of being sure that
+                    there will be parking lots <strong><em>available</em></strong> upon arrival and parking fees made
+                    <strong><em>known</em></strong> before entry.
+                </p>
+                <a class="project_content_cta" target="_blank"
+                    href="https://docs.google.com/document/d/1525MWMfQWPxmsk2bqHJuDXB845Yg1PChKZcaL2ggTv4/edit?usp=sharing">README</a>
+                <a class="project_content_cta" target="_blank" href="https://github.com/yeo-yiheng/MyWay">REPOSITORY</a>
             </div>
         </div>
     </div>
-    <div class="bg-modal" id="myway_content">
+    <div class="bg-modal" id="odin-content">
         <div class="modal-content">
-            <div class="close" id="close_myway">+</div>
+            <div class="close" id="close-odin">+</div>
             <div class="content_container">
-                <h2 class="project_content_title">MyWay</h2>
-                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <p class="project_content_description">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <a class="project_content_cta" href="https://github.com/yeo-yiheng/MyWay">DEMO</a>
-                <a class="project_content_cta" href="https://github.com/yeo-yiheng/MyWay">REPOSITORY</a>
+                <h2 class="project_content_title">The Odin Project</h2>
+                <p class="project_content_description">Currently, I am still undergoing the course. The primary goal of
+                    the course is to pick up
+                    <strong><em>HTML</em></strong>, <strong><em>CSS</em></strong>, <strong><em>JavaScript</em></strong>,
+                    and a framework like <strong><em>React</em></strong>. <br><br>
+                </p>
+                <p class="project_content_description">Throughout the course, I was exposed to many documentations,
+                    challenges, anecdotes, tips and tricks, and many more useful information to help solidfy my web
+                    development skill. At the end of every section, there would be a hands on project to work on that
+                    comprises of challenges that requires previously acquired knowledge to solve.</p>
+                <p class="project_content_description">Here are some of the demos of what I was able to build through my
+                    course thus far: </p>
+                <a class="project_content_cta" target="_blank"
+                    href="https://yeo-yiheng.github.io/odin-etch-a-sketch/">Etch-a-Sketch Demo</a>
+                <a class="project_content_cta" target="_blank" href="https://yeo-yiheng.github.io/odin-calc/">Calculator
+                    Demo</a>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
 </body>

@@ -1,7 +1,10 @@
+let isDisabled = false;
+
 // -------------------------- Sticky Navbar --------------------------
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navBar = document.querySelector(".navbar");
+const mask = document.querySelector(".mask");
 const offset = navBar.offsetTop - 15;
 
 function onScroll() {
@@ -15,48 +18,56 @@ document.addEventListener('scroll', onScroll);
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
+    mask.classList.toggle("active");
+    navBar.classList.toggle("active");
+    if (isDisabled) {
+        enableScrolling();
+    } else {
+        disableScrolling();
+    }
 });
 
 document.querySelectorAll(".nav-link").forEach(n =>
     n.addEventListener("click", () => {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
+        mask.classList.remove("active");
+        navBar.classList.remove("active");
+        enableScrolling();
     }));
 
+mask.addEventListener("click", e => {
+    hamburger.click();
+});
 // -------------------------- Project Card --------------------------
-document.querySelector('.learn_travelio').addEventListener('click', () => {
-    console.log(window.scrollY);
-    disableScrolling();
-    const popup = document.getElementById('travelio_content');
-    popup.style.top = window.scrollY + "px";
-    popup.classList.add("active");
+document.querySelectorAll('.project_card_cta').forEach(cta => {
+    let project = (cta.id).split('-')[1];
+    if (project != undefined) {
+        cta.addEventListener("click", e => {
+            disableScrolling();
+            const popup = document.getElementById(`${project}-content`);
+            popup.style.top = window.scrollY + "px";
+            popup.classList.add("active");
+        });
+    }
 });
 
-document.querySelector('.learn_myway').addEventListener('click', () => {
-    console.log(window.scrollY);
-    disableScrolling();
-    const popup = document.getElementById('myway_content');
-    popup.style.top = window.scrollY + "px";
-    popup.classList.add("active");
+document.querySelectorAll(".close").forEach(closer => {
+    closer.addEventListener("click", e => {
+        enableScrolling();
+        let project = (closer.id).split('-')[1];
+        document.getElementById(`${project}-content`).classList.remove("active");
+    });
 });
-
-document.getElementById('close_myway').addEventListener('click', () => {
-    enableScrolling();
-    document.getElementById('myway_content').classList.remove("active");
-});
-
-document.getElementById('close_travelio').addEventListener('click', () => {
-    enableScrolling();
-    document.getElementById('travelio_content').classList.remove("active");
-});
-
 // -------------------------- Loading Screen --------------------------
 function disableScrolling() {
     document.body.classList.add('stop-scrolling');
+    isDisabled = true;
 }
 
 function enableScrolling() {
     document.body.classList.remove('stop-scrolling');
+    isDisabled = false;
 }
 
 const loader = document.querySelector(".loader-wrapper");
@@ -87,6 +98,14 @@ const aContactElem = document.querySelector(".contact-link");
 contactButton.addEventListener("click", () => {
     aContactElem.click();
 });
+
+const emailButton = document.querySelector(".contact_content_send_email");
+const aEmailButton = document.querySelector(".contact_send_message_cta");
+
+emailButton.addEventListener("click", () => {
+    aEmailButton.click();
+});
+
 // open up form
 
 // -------------------------- Side Panel --------------------------
