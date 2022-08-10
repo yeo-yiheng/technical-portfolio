@@ -1076,4 +1076,8 @@
             width: 0;
             size: 10%;
         }
+
+        .content_container {
+            padding-block: 30px;
+        }
     }
