@@ -175,8 +175,8 @@ img {
 }
 
 .icon-item {
-    height: 2em;
-    width: 2em;
+    height: 2rem;
+    width: 2rem;
 }
 
 .hamburger {
@@ -450,7 +450,7 @@ section {
 }
 
 .project_card {
-    padding: 2em;
+    padding: 2rem;
     background: rgba(202, 229, 246, 0.33);
     display: flex;
     flex-direction: column;
@@ -473,9 +473,9 @@ section {
 }
 
 .project_logo {
-    height: 10em;
-    width: 10em;
-    margin-block: 1em;
+    height: 10rem;
+    /* width: 10rem; */
+    margin-block: 1rem;
 }
 
 .project_description_container {
@@ -486,7 +486,7 @@ section {
 }
 
 .project_card_description {
-    margin-block-end: 1em;
+    margin-block-end: 1rem;
     text-align: center;
 }
 
@@ -747,8 +747,8 @@ section {
 }
 
 .contact-icon-wrappers>img {
-    width: 40px;
-    height: 40px;
+    width: 3em;
+    height: 3rem;
     margin-right: 10px;
 }
 
@@ -775,7 +775,7 @@ section {
 
 .contact_content {
     width: 600px;
-    border: 10px outset lightblue;
+    border: 5px outset lightblue;
     border-radius: 38px;
 }
 
@@ -836,7 +836,7 @@ section {
     }
 
     .nav-item {
-        margin: 1em 0;
+        margin: 1rem 0;
     }
 
     .nav-link {
@@ -875,8 +875,8 @@ section {
     }
 
     .contact_icon {
-        height: 2em;
-        width: 2em;
+        height: 2rem;
+        width: 2rem;
     }
 
     #experience_title {
@@ -1087,4 +1087,26 @@ section {
     .content_container {
         padding-block: 30px;
     }
+}
+
+@media(max-width: 370px) {
+    .contact-icon-wrappers>img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .contact-icon-wrappers>.contact-detail {
+        font-size: 12px;
+    }
+
+    .form-footer {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact_icons {
+        flex-direction: column;
+        margin-inline: 0;
+    }
+    
 }
