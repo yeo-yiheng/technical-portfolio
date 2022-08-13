@@ -307,6 +307,7 @@ section {
     background-repeat: no-repeat;
     border: 10px inset lightblue;
     border-radius: 50%;
+    padding: 0;
 }
 
 .about-image:hover {
@@ -730,6 +731,7 @@ section {
 
 .contact_send_message_cta {
     color: initial;
+    font-size: 14px;
 }
 
 .form-footer {
@@ -744,6 +746,7 @@ section {
     color: #00203F;
     font-size: 12px;
     margin-block: 5px;
+    margin-inline-start: 10px;
     margin-inline-end: 20px;
 }
 
