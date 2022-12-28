@@ -391,6 +391,12 @@ section {
     color: rgb(202, 229, 246);
 }
 
+.experience-card-timeline.misc {
+    color: antiquewhite;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .experience_card_description {
     font-weight: normal;
     font-size: 18px;
