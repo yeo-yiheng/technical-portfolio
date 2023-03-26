@@ -1070,6 +1070,17 @@ section {
     .credits {
         display: none;
     }
+
+    .horizontal_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .project_content_cta {
+        margin-block: 5px;
+    }
 }
 
 @media(max-width: 450px) {
