@@ -238,6 +238,23 @@
                         <div class="experience_timeline_circle"></div>
                         <div class="experience_card_triangle"></div>
                         <div class="experience_card_content">
+                            <p class="experience_card_title">Competitions</p>
+                            <p class="experience-card-role">Optiver Ready Trader Go Competition, <strong>March 2023</strong></p>
+                            <p class="experience-card-timeline-misc">Deployed a <strong>Top 128</strong> trading strategy of over 900 teams in a round-robin tournament.
+                                The instruments traded was an ETF-Futures trading pair, and contestants were tasked to make as much profit pairs trading the provided instruments.
+                                I employed a multitude of strategies through metrics like <strong>price deviation, market volatility, and hedge ratios</strong>.
+                            </p>
+                            <p class="experience-card-role"><strong>Finalist</strong> in NUS Fintech Hackathon, <strong>January 2023</strong></p>
+                            <p class="experience-card-timeline-misc">Developed <strong>Xyfer</strong>, a blockchain solution that aims to increase the efficiency of traditional banks in their
+                            transfer services. It serves as an API gateway that is easily integrated into modern banks infrastructure. Xyfer was one of the final products presented
+                            live at the NUS Fintech Hackathon 2023. The certificate can be viewed <a class="ahe-hyperlink" href="https://drive.google.com/file/d/1G91LmWeQKkhTm6X90IDt7-gzR0VJ8Jn-/view?usp=sharing"
+                            target="_blank">here</a>. </p>
+                            <p class="experience-card-role">Arctic Lake Coding Competition, <strong>December 2022</strong></p>
+                            <p class="experience-card-timeline-misc">Finished top 20 in over 300 candidates.</p>
+                        </div>
+                        <div class="experience_timeline_circle"></div>
+                        <div class="experience_card_triangle"></div>
+                        <div class="experience_card_content">
                             <p class="experience_card_title">Certifications</p>
                             <p class="experience-card-role">CS198.1x: Bitcoin and Cryptocurrencies, <strong>December 2022</strong></p>
                             <p class="experience-card-timeline-misc">I learnt about the high level overview of Bitcoin, the history of the Blockchain, 
@@ -247,14 +264,6 @@
                             <p class="experience-card-role">CS198.2x: Blockchain Technology, <strong>December 2022</strong></p>
                             <p class="experience-card-timeline-misc">The verified certificate is viewable <a class="ahe-hyperlink" href="https://courses.edx.org/certificates/e5c4ea80dc294fdf9d1a76288818f259"
                                 target="_blank">here</a>.</p>
-                            <p class="experience_card_title">Competitions</p>
-                            <p class="experience-card-role">Arctic Lake Coding Competition, <strong>December 2022</strong></p>
-                            <p class="experience-card-timeline-misc">Finished top 20 in over 300 candidates.</p>
-                            <p class="experience-card-role"><strong>Finalist</strong> in NUS Fintech Hackathon, <strong>January 2023</strong></p>
-                            <p class="experience-card-timeline-misc">Developed <strong>Xyfer</strong>, a blockchain solution that aims to increase the efficiency of traditional banks in their
-                            transfer services. It serves as an API gateway that is easily integrated into modern banks infrastructure. Xyfer was one of the final products presented
-                            live at the NUS Fintech Hackathon 2023. The certificate can be viewed <a class="ahe-hyperlink" href="https://drive.google.com/file/d/1G91LmWeQKkhTm6X90IDt7-gzR0VJ8Jn-/view?usp=sharing"
-                            target="_blank">here</a>. </p>
                         </div>
                     </div>
                 </div>
@@ -311,10 +320,14 @@
                 </div>
                 <div class="project_card">
                     <div class="project_title_container">
-                        <img class="project_logo" src="assets/wip.png">
+                        <p class="project_card_title">Checkscii</p>
+                        <img class="project_logo square_logo" src="assets/checks-logo.png">
                     </div>
                     <div class="project_description_container">
-                        <p class="project_card_title"><strong>UNDER CONSTRUCTION</strong></p>
+                        <p class="project_card_description">This is a fun side-project I developed on the <strong>Ethereum mainnet</strong>. I deployed a live smart contract
+                            that uses algorithms to randomly generate an ASCII checks image as a tradable ERC721 token.
+                        </p>
+                        <button type="button" id="learn-checkscii" class="project_card_cta learn-checkscii">Learn More</button>
                     </div>
                 </div>
                 <div class="project_card tbc-blur">
@@ -420,8 +433,6 @@
             </div>
         </div>
     </section>
-    <!-- CREDITS -->
-    <!-- <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Uniconlabs - Flaticon</a> -->
     <!-- Popups -->
     <div class="bg-modal" id="myway-content">
         <div class="modal-content">
@@ -485,6 +496,30 @@
                     - Solidity <br>
                     - Misc. APIs </p>
                 <a class="project_content_cta" target="_blank" href="https://github.com/yeo-yiheng/xyfer">REPOSITORY</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-modal" id="checkscii-content">
+        <div class="modal-content">
+            <div class="close" id="close-checkscii">+</div>
+            <div class="content_container">
+                <h2 class="project_content_title checkscii">Checkscii</h2>
+                <p class="project_content_description">
+                    Checkscii is an experimental project that I developed in my free time. The idea was to <strong>algorithmically</strong> generate art on the Ethereum mainnet as ERC721 tokens.
+                    The algorithm employs two kinds of smart contract --- a <strong>front facing token contract</strong> and a <strong>descriptor contract</strong>. 
+                    The art is stored <strong>on-chain</strong>, and does not employ any third-party remote storage. The initial contract was deployed on the <strong><em>Goerli testnet</em></strong>, and finally on the mainnet 
+                    after ensuring that the smart contract was bug-free and efficient. I provided the ability to mint these tokens by deploying a simple website using <strong>Vercel</strong>, created with
+                    some simple React components. 
+                    <br><br>
+                    <strong>Tech stack:</strong><br>
+                    - Hardhat <br>
+                    - Solidity <br>
+                    - React <br>
+                <div class="horizontal_content">
+                    <a class="project_content_cta" target="_blank" href="https://checkscii.vercel.app/">WEBSITE</a>
+                    <a class="project_content_cta" target="_blank" href="https://etherscan.io/address/0x0A228DBaE3a7dDeB7Ee2680e13C9605FdC6D948D">TOKEN CONTRACT</a>
+                    <a class="project_content_cta" target="_blank" href="https://etherscan.io/address/0xbBe8d96e30038d08417eeF67Fecb6D29500a6169">DESCRIPTOR CONTRACT</a>
+                </div>
             </div>
         </div>
     </div>

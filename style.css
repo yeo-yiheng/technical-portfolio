@@ -486,6 +486,10 @@ section {
     margin-block: 1rem;
 }
 
+.square_logo {
+    border-radius: 50%;
+}
+
 .project_description_container {
     display: flex;
     flex-direction: column;
@@ -607,6 +611,13 @@ section {
 .project_content_cta:hover {
     color: rgb(58, 152, 210);
     transition: 0.5s ease;
+}
+
+.horizontal_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .tbc-blur {
