@@ -301,7 +301,7 @@ section {
     height: 16rem;
     width: 16rem;
     position: relative;
-    background: url("./assets/YH\ FACE.jpg");
+    background: url("./assets/YH_FACE.jpeg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -312,7 +312,7 @@ section {
 
 .about-image:hover {
     background-color: rgba(58, 152, 210, 0.77);
-    background-image: url("./assets/YH\ FACE.jpg");
+    background-image: url("./assets/YH_FACE.jpeg");
     transition: 0.5s ease;
     background-blend-mode: multiply;
 }
